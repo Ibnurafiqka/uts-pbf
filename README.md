@@ -65,3 +65,30 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # uts-pbf
+
+# Laravel Auth Web App
+
+Ini adalah aplikasi Laravel sederhana yang memiliki sistem autentikasi custom, login form, dashboard, serta personalisasi user setelah login. Cocok untuk aplikasi admin panel atau sistem internal lainnya.
+
+## Fitur
+
+- Custom login page dengan UI Tailwind CSS
+- Redirect otomatis ke dashboard setelah login
+- Tampilan nama user di navbar saat login
+- Blade view yang terstruktur (`resources/views`)
+- Autentikasi menggunakan Laravel Auth
+- Custom `404.blade.php` untuk error page
+
+## Struktur Folder Penting
+
+```bash
+resources/views/
+├── layouts/
+│   └── guest.blade.php      # Layout untuk halaman login/register
+├── errors/
+│   └── 404.blade.php        # Custom halaman error
+├── filament/admin/
+│   └── settings.blade.php   # Halaman settings admin
+├── dashboard.blade.php      # Halaman dashboard setelah login
+└── login.blade.php          # Form login
+
